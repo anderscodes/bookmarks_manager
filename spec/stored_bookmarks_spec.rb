@@ -1,4 +1,3 @@
-require './lib/stored_bookmarks'
 
 describe StoredBookmarks do
 
