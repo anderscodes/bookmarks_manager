@@ -4,14 +4,17 @@ require './lib/database_manager'
 
 class Bookmarks < Sinatra::Base
 
-  get '/' do
-    @bookmark = StoredBookmarks.all
+  get '/bookmarks' do
   erb :index
   end
 
-  post '/form' do
-    StoredBookmarks.add(params[:bookmark])
-    redirect('/')
+  post '/new' do
+    bookmark.add(params[:bookmark])
+    redirect('/bookmarks')
+  end
+
+  def bookmark
+    StoredBookmarks
   end
 
 end

@@ -1,6 +1,7 @@
 require 'capybara'
 require 'capybara/rspec'
 require 'rspec'
+require 'pg'
 
 require './lib/stored_bookmarks'
 

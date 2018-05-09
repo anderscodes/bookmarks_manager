@@ -1,4 +1,3 @@
-
 describe StoredBookmarks do
 
 subject(:stored_bookmarks) { described_class }
