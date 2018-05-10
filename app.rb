@@ -5,7 +5,7 @@ class Bookmarks < Sinatra::Base
 
   get '/' do
     @bookmark = StoredBookmarks.all
-  erb :index
+    erb :index
   end
 
   post '/form' do

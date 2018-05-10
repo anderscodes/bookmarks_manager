@@ -11,6 +11,6 @@ ENV['ENVIROMENT'] = 'test'
 
 RSpec.configure do |config|
   config.before(:each) do
-    require './lib/testing_enviroment.rb'
+    require 'testing_enviroment'
   end
 end
